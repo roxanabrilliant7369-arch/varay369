@@ -62,4 +62,338 @@ input {
   padding: 1rem 5vw;
   border-bottom: 1px solid var(--border);
   background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(18px);
+}
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  text-transform: uppercase;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.main-nav a {
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: var(--text);
+}
+
+.nav-audition {
+  color: var(--text) !important;
+  font-weight: 700;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.header-actions select,
+.header-actions button {
+  min-height: 2.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 0 0.85rem;
+}
+
+.header-actions button {
+  cursor: pointer;
+}
+
+.section {
+  padding: 5.5rem 5vw;
+}
+
+.compact-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(17rem, 0.75fr);
+  gap: 2rem;
+  align-items: center;
+  min-height: calc(100vh - 4.6rem);
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 58rem;
+  margin-bottom: 1.2rem;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+}
+
+h2 {
+ : 1;
+  letter-spacing: font-size: clamp(2rem, 4vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+.hero-text {
+  max-width: 42rem;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  border-radius: 999px;
+  padding: 0 1.2rem;
+  font-weight: 800;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.button.secondary {
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.hero-panel,
+.card,
+.feature-strip,
+.contact-box,
+.audition-form {
+  border: 1px solid var(--border);
+  border-radius: 1.6rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.hero-panel {
+  display: flex;
+  min-height: 24rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.4rem;
+}
+
+.hero-panel span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero-panel strong {
+  margin: 0.6rem 0;
+  font-size: 2rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.hero-panel p {
+  color: var(--muted);
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card,
+.feature-strip,
+.contact-box {
+  padding: 1.35rem;
+}
+
+.card p,
+.feature-strip p,
+.contact-box span,
+.audition-layout p {
+  color: var(--muted);
+}
+
+.feature-strip {
+  max-width: 62rem;
+}
+
+.contact-box {
+  display: grid;
+  max-width: 35rem;
+  gap: 0.25rem;
+}
+
+.contact-box p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.contact-box strong {
+  font-size: 1.8rem;
+  letter-spacing: -0.04em;
+}
+
+.audition-section {
+  border-top: 1px solid var(--border);
+}
+
+.audition-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.75fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.small-note {
+  font-size: 0.9rem;
+}
+
+.audition-form {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.audition-form input,
+.audition-form select,
+.audition-form button {
+  width: 100%;
+  min-height: 3rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface-strong);
+  color: var(--text);
+  padding: 0 1rem;
+}
+
+.audition-form button {
+  color: var(--muted);
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.4rem 5vw;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+html[dir="rtl"] body {
+  font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+html[dir="rtl"] .main-nav,
+html[dir="rtl"] .header-actions,
+html[dir="rtl"] .hero-buttons,
+html[dir="rtl"] .brand {
+  direction: rtl;
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+  }
+
+  .hero,
+  .audition-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .card-grid.three,
+  .card-grid.two {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 17vw, 5.4rem);
+  }
+
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .site-footer {
+    flex-direction: column;
+  }
+}
